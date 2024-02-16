@@ -1,66 +1,39 @@
-## Foundry
+# Uniswap Code Structure Replica
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This repository showcases a project that replicates the code structure of Uniswap, one of the largest and most popular **Decentralized Exchanges (DEX)**. The project is based on the "Programming DeFi" article series by [Ivan Kuznetsov](https://github.com/Jeiwan) and can be found [here](https://jeiwan.net/posts/programming-defi-uniswap-1/).
 
-Foundry consists of:
+## About Decentralized Exchanges
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+Decentralized Exchanges (DEX) are platforms that facilitate peer-to-peer trading of cryptocurrencies without the need for intermediaries. They operate on decentralized networks and use smart contracts to enable direct transactions between users, providing greater privacy, security, and control over assets compared to centralized exchanges.
 
-## Documentation
+### Key Concepts
 
-https://book.getfoundry.sh/
+- **Smart Contracts**: Self-executing contracts with the terms of the agreement directly written into code. In DEX, smart contracts automate trade settlements and ensure trustless transactions.
 
-## Usage
+- **Liquidity Pools**: Pools of tokens locked in smart contracts that facilitate decentralized trading. Liquidity providers contribute tokens to these pools and earn fees in return.
 
-### Build
+- **Automated Market Makers (AMM)**: Algorithms that determine token prices based on the ratio of tokens in liquidity pools. Uniswap, for example, uses an AMM model to enable continuous liquidity provision.
 
-```shell
-$ forge build
-```
+## Using the Foundry Framework
 
-### Test
+Unlike the original repository, this project is adapted to utilize the Foundry framework (https://book.getfoundry.sh/). Foundry is a modern web framework for Rust, designed for building fast and reliable web applications with minimal boilerplate code.
 
-```shell
-$ forge test
-```
+## Replicating this Repository Locally
 
-### Format
+To replicate this repository on your local machine, follow these instructions:
 
-```shell
-$ forge fmt
-```
+1. Clone the repository:
 
-### Gas Snapshots
+    ```bash
+    git clone git@github.com:igorlnunes/dex_learning.git
+    ```
 
-```shell
-$ forge snapshot
-```
+2. Navigate to the project directory:
 
-### Anvil
+    ```bash
+    cd dex_learning
+    ```
 
-```shell
-$ anvil
-```
+3. Follow the setup and installation instructions provided in the README or documentation of the Foundry framework to configure and run the project locally.
 
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+Now you can explore and experiment with the Uniswap code structure replica using the Foundry framework in your local development environment!
